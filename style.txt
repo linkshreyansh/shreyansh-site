@@ -1,0 +1,115 @@
+/* ---------- Body & General ---------- */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 40px 20px;
+  line-height: 1.6;
+  background: #f7f7f7;
+  color: #333;
+}
+
+/* ---------- Buttons ---------- */
+.button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 24px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.button:hover { background-color: #444; }
+
+/* ---------- Top Section ---------- */
+.top-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+.whatido {
+  font-size: 18px;
+  color: #555;
+}
+
+/* ---------- Popups ---------- */
+.about-section {
+  display: none; /* hidden by default */
+  position: fixed; /* overlay on top of everything */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* perfectly center */
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh; /* limits height to 80% of viewport */
+  overflow-y: auto; /* scroll if content is too tall */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  z-index: 1000;
+  text-align: left;
+}
+.about-section h2 { margin-top: 0; }
+
+/* ---------- Sections ---------- */
+.section {
+  margin-bottom: 60px;
+}
+.section h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.story p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ---------- Books Section ---------- */
+.books .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.card img {
+  width: 140px;
+  margin-bottom: 10px;
+}
+.card h3 { margin: 10px 0; }
+.card p { font-size: 16px; margin-bottom: 10px; }
+.card.coming-soon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+}
+
+/* ---------- Channel & Contact ---------- */
+.channel a { margin-top: 10px; }
+.contact a { color: #000; font-weight: bold; text-decoration: none; }
+
+/* ---------- Footer ---------- */
+.footer {
+  font-size: 14px;
+  color: #777;
+  margin-top: 60px;
+}

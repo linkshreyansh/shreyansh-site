@@ -1,0 +1,74 @@
+<!-- Top section: Shreyansh + What I Do -->
+<div class="top-section">
+  <button class="button" id="aboutBtn">Shreyansh</button>
+  <span class="whatido">Creative Writing • Story Development</span>
+</div>
+
+<!-- Hidden About Me popup -->
+<div id="aboutSection" class="about-section">
+  <h2>About Me — Shreyansh</h2>
+  <p>Hello! I’m Shreyansh, a writer and creator passionate about storytelling, adventures, and helping people discover their voice.</p>
+  <p>I love writing books like <b>What's Your Story?</b> and <b>Camp Feralis</b>, and creating content on my YouTube channel.</p>
+  <button class="button" id="closeAbout">Close</button>
+</div>
+
+<!-- My Story -->
+<div class="section story">
+  <h2>My Story | What I Am</h2>
+  <p>
+    Write your story here — what shaped you, where you come from, your journey so far. Who you are — writer, creator, thinker, dreamer. Explain your mission and passions.
+  </p>
+</div>
+
+<!-- Books Section -->
+<div class="section books">
+  <h2>My Books</h2>
+  <div class="cards">
+
+    <div class="card">
+      <img src="https://i.postimg.cc/qzBNGZt8/Whats-Your-Story.jpg" alt="What's Your Story?">
+      <h3>What's Your Story?</h3>
+      <p>A reflective and inspiring book to help readers discover their voice and personal journey.</p>
+      <a class="button" href="https://www.amazon.com/WHATS-YOUR-STORY-Achievements-Self-Esteem/dp/B0DSW9Z338" target="_blank">Get the Book</a>
+      <button class="button learn-btn" data-book="story">Learn More</button>
+    </div>
+
+    <div class="card">
+      <img src="https://i.postimg.cc/mtTLszBf/Camp-Feralis.jpg" alt="Camp Feralis">
+      <h3>Camp Feralis</h3>
+      <p>A thrilling adventure where summer camp becomes a wild test of courage and mystery.</p>
+      <a class="button" href="https://www.amazon.com/CAMP-FERALIS-SHREY-LAND-WILDS/dp/B0GG6Q9LT1" target="_blank">Get the Book</a>
+      <button class="button learn-btn" data-book="camp">Learn More</button>
+    </div>
+
+    <div class="card coming-soon">
+      <h3>Coming Soon</h3>
+      <p>💰 Something exciting is coming soon… think money.</p>
+    </div>
+
+  </div>
+</div>
+
+<!-- Hidden Book Details Section -->
+<div id="bookDetails" class="about-section">
+  <h2 id="bookTitle"></h2>
+  <p id="bookDesc"></p>
+  <button class="button" id="closeBook">Close</button>
+</div>
+
+<!-- YouTube Section -->
+<div class="section channel">
+  <h2>My Channel</h2>
+  <a class="button" href="https://www.youtube.com/@linkshreyansh" target="_blank">Visit My YouTube Channel</a>
+</div>
+
+<!-- Contact Section -->
+<div class="section contact">
+  <h2>Contact Me</h2>
+  <p>For any questions, email me at <b>linkshreyansh@gmail.com</b></p>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  © 2026 Shreyansh. All rights reserved.
+</div>
