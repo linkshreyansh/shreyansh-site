@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Camp Feralis | Shreyansh</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Camp Feralis</h1>
+
+<p>
+Welcome to Camp Feralis—where summer fun turns into a fight for survival.
+</p>
+
+<p>
+When Shrey arrives at what’s supposed to be the camp of his dreams, he quickly realizes something is terribly wrong. Kids are screaming. Animals are attacking without warning. And the adults who promised to protect them seem to have a dark secret.
+</p>
+
+<p>
+As danger closes in from every direction, Shrey and his friends must uncover the truth behind Camp Feralis before it’s too late.
+</p>
+
+<p>
+One thing is certain—at Camp Feralis, the nightmare has only just begun.
+</p>
+
+<br>
+
+<a href="index.html" class="button">Back to Home</a>
+
+</body>
+</html>
