@@ -1,17 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shreyansh</title>
-<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+header{
+background:#333;
+color:white;
+text-align:center;
+padding:40px;
+}
+
+nav{
+background:#444;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-size:18px;
+}
+
+section{
+padding:40px;
+max-width:900px;
+margin:auto;
+}
+
+.book{
+background:white;
+padding:20px;
+margin-top:20px;
+border-radius:10px;
+}
+
+button{
+background:#333;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#555;
+}
+
+footer{
+background:#333;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
+
 </head>
 
 <body>
 
 <header>
 <h1>Shreyansh</h1>
-<p>🎨 Creative • 💻 Coder • 📚 Author • 🎬 Content Creator • ✨ And much more</p>
+<p>Creative 🎨 • Coder 💻 • Author 📚 • Content Creator 🎬 • and much more ✨</p>
 </header>
 
 <nav>
@@ -22,22 +82,18 @@
 </nav>
 
 <section id="about">
-<h2>About</h2>
-
-<h3>More About Me</h3>
+<h2>More About Me</h2>
 
 <p>
-Shreyansh is a young creator with a passion for storytelling, imagination, and building ideas. 
-He enjoys writing books that inspire readers to think creatively, believe in themselves, and explore new adventures through stories.
+Shreyansh is a young author and creative storyteller who enjoys building imaginative worlds and inspiring others through his ideas.
 </p>
 
 <p>
-Beyond writing, Shreyansh is also interested in coding, creating websites, and sharing ideas online. 
-He enjoys combining creativity with technology to bring projects to life, whether it is a story, a website, or a video.
+His work focuses on creativity, storytelling, and encouraging others to explore their imagination.
 </p>
 
 <p>
-Through books, videos, and creative projects, Shreyansh hopes to encourage others to explore their imagination, try new things, and never stop creating.
+Along with writing books, he enjoys coding, creating content, and working on new projects that combine technology and storytelling.
 </p>
 
 </section>
@@ -45,53 +101,52 @@ Through books, videos, and creative projects, Shreyansh hopes to encourage other
 <section id="books">
 <h2>Books</h2>
 
+<div class="book">
 <h3>Camp Feralis</h3>
 <p>
-A mysterious wilderness camp turns into an unforgettable adventure where survival, courage, and friendship are tested in the wild.
+An exciting adventure set in the wild where survival, teamwork, and courage are tested.
 </p>
 
+<button onclick="window.open('camp-feralis.html','_blank')">
+Learn More
+</button>
+
+</div>
+
+<div class="book">
+<h3>What's Your Story?</h3>
 <p>
-<a href="https://www.amazon.com/CAMP-FERALIS-SHREY-LAND-WILDS/dp/B0GG6Q9LT1/ref=sr_1_1?crid=3L2T8HLKXYNMQ&dib=eyJ2IjoiMSJ9.alGrVq00J8Ib1xVWZws44g.i0IH1ovBOZDPkGIwUn7KtTRhEHfbDyEsqIgy9ft1QSw&dib_tag=se&keywords=camp+feralis&qid=1772835656&sprefix=camp+fer%2Caps%2C122&sr=8-1" target="_blank">
-<button>View on Amazon</button>
-</a>
+A thoughtful and inspiring book designed to help readers reflect on their achievements and build confidence.
 </p>
 
-<h3>What's Your Story</h3>
-<p>
-A book about achievements, confidence, and self-esteem that encourages readers to reflect on their own journey and celebrate their personal story.
-</p>
+<button onclick="window.open('whats-your-story.html','_blank')">
+Learn More
+</button>
 
-<p>
-<a href="https://www.amazon.com/WHATS-YOUR-STORY-Achievements-Self-Esteem/dp/B0DSW9Z338/ref=sr_1_1?crid=16I57EV6M2GJT&dib=eyJ2IjoiMSJ9.bxFBpVFoq2nELfvDc75lGHOcrJavm6ds1DPKvXns4RI.jKzzT-Hv0xRkexyXQIomuond9L52f2JPquVrly5PPJk&dib_tag=se&keywords=whats+your+story+shreyansh&qid=1772835613&s=books&sprefix=whats+your+story+shreyansh%2Cstripbooks%2C120&sr=1-1" target="_blank">
-<button>View on Amazon</button>
-</a>
-</p>
-
-<h3>Coming Next</h3>
-<p><b>Think Money</b></p>
+</div>
 
 </section>
 
 <section id="channel">
+
 <h2>Channel</h2>
 
 <p>
-Watch videos, ideas, and creative content on my YouTube channel.
+I also create videos sharing ideas, creativity, and fun projects on my YouTube channel.
 </p>
 
-<p>
-<a href="https://www.youtube.com" target="_blank">
-<button>Visit My YouTube Channel</button>
-</a>
-</p>
+<button onclick="window.open('https://www.youtube.com','_blank')">
+Visit My Channel
+</button>
 
 </section>
 
 <section id="contact">
+
 <h2>Contact</h2>
 
 <p>
-More updates and projects coming soon.
+Stay tuned for more books, creative projects, and exciting ideas coming soon.
 </p>
 
 </section>
