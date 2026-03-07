@@ -86,27 +86,71 @@ box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 .book h3 {
 margin: 10px 0;
 color: #333;
+font-size: 1.5em;
 }
 
 .book p {
 text-align: center;
 margin: 15px 0;
+line-height: 1.6;
+color: #555;
 }
 
-button{
+.book button {
 background:#333;
 color:white;
 border:none;
-padding:10px 30px;
+padding:12px 30px;
 border-radius:5px;
 cursor:pointer;
-margin-top: 10px;
+margin-top: 15px;
 font-size: 1em;
 transition: background 0.3s ease;
+width: auto;
+min-width: 150px;
 }
 
-button:hover{
+.book button:hover{
 background:#555;
+}
+
+.coming-soon {
+text-align: center;
+margin-top: 50px;
+padding: 30px;
+background: linear-gradient(135deg, #f9f9f9, #fff);
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+border: 2px dashed #ffd700;
+}
+
+.coming-soon h3 {
+font-size: 2.5em;
+color: #333;
+margin-bottom: 10px;
+}
+
+.coming-soon p {
+font-size: 1.8em;
+color: #ffd700;
+letter-spacing: 5px;
+margin: 15px 0;
+}
+
+.coming-soon .emoji-row {
+font-size: 2.5em;
+margin-top: 15px;
+}
+
+.coming-soon .emoji-row span {
+margin: 0 10px;
+display: inline-block;
+animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+0%, 100% { transform: translateY(0); }
+50% { transform: translateY(-10px); }
 }
 
 footer{
@@ -158,6 +202,12 @@ gap: 20px;
 }
 .book {
 max-width: 100%;
+}
+.coming-soon h3 {
+font-size: 2em;
+}
+.coming-soon p {
+font-size: 1.5em;
 }
 }
 </style>
@@ -223,6 +273,31 @@ Learn More
 </div>
 
 </div>
+
+<!-- More Coming Soon Section -->
+<div class="coming-soon">
+<h3>More Coming Soon...</h3>
+<div class="emoji-row">
+<span>💰</span>
+<span>💵</span>
+<span>🤑</span>
+<span>💎</span>
+<span>💰</span>
+<span>💵</span>
+<span>🤑</span>
+</div>
+<p>💰 💵 🤑 💎</p>
+<div class="emoji-row">
+<span>💎</span>
+<span>💰</span>
+<span>💵</span>
+<span>🤑</span>
+<span>💎</span>
+<span>💰</span>
+<span>💵</span>
+</div>
+</div>
+
 </section>
 
 <section id="channel">
