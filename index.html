@@ -83,6 +83,82 @@ margin:auto;
   margin: 30px 0 20px;
 }
 
+/* Video Section - NEW STYLING */
+.video-section {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin: 40px 0;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 28.125%; /* 16:9 aspect ratio but half the height */
+  height: 0;
+  overflow: hidden;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+
+.video-text {
+  width: 50%;
+  text-align: left;
+}
+
+.video-text h3 {
+  font-size: 2.8em !important;
+  margin: 0 0 15px 0 !important;
+  color: #333;
+  border-left: 5px solid #ff0000;
+  padding-left: 20px;
+}
+
+.video-text p {
+  font-size: 1.4em !important;
+  color: #555;
+  margin: 0 0 20px 0 !important;
+  line-height: 1.6;
+}
+
+.watch-now-btn {
+  display: inline-block;
+  background: #ff0000;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.watch-now-btn:hover {
+  background: #cc0000;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(255,0,0,0.3);
+}
+
+.watch-now-btn i {
+  margin-right: 8px;
+}
+
 #books {
 max-width: 1200px;
 }
@@ -243,27 +319,6 @@ padding:20px;
 margin-top:40px;
 }
 
-.video-container {
-position: relative;
-padding-bottom: 56.25%;
-height: 0;
-overflow: hidden;
-max-width: 100%;
-margin: 20px 0;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.video-container iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-border: none;
-border-radius: 10px;
-}
-
 #contact {
 background: #222;
 color: white;
@@ -349,6 +404,28 @@ color: white;
 
 /* Responsive design */
 @media (max-width: 768px) {
+  .video-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .video-container {
+    width: 100%;
+    padding-bottom: 56.25%; /* Back to full size on mobile */
+  }
+  
+  .video-text {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .video-text h3 {
+    border-left: none;
+    border-bottom: 3px solid #ff0000;
+    padding-left: 0;
+    padding-bottom: 10px;
+  }
+  
 .books-container {
 gap: 20px;
 }
@@ -488,14 +565,22 @@ Learn More
 Welcome to my YouTube corner! I create videos that bring together my love for storytelling, technology, and creativity. You'll find content ranging from book updates and writing tips to coding tutorials and fun creative challenges. Whether I'm sharing the inspiration behind my latest book or building something cool with code, my goal is to entertain, educate, and inspire young creators like you. Subscribe and join the adventure!
 </p>
 
-<!-- Featured Video - I am an Author! -->
-<h3>Watch My Video: "I am an Author ! What's your story?"</h3>
-<div class="video-container">
-<iframe 
-src="https://www.youtube.com/embed/t27xUNh8aXU?rel=0&modestbranding=1" 
-title="I am an Author ! What's your story?"
-allowfullscreen>
-</iframe>
+<!-- Featured Video Section with smaller video and text on right -->
+<div class="video-section">
+  <div class="video-container">
+    <iframe 
+    src="https://www.youtube.com/embed/t27xUNh8aXU?rel=0&modestbranding=1" 
+    title="I am an Author ! What's your story?"
+    allowfullscreen>
+    </iframe>
+  </div>
+  <div class="video-text">
+    <h3>Watch My Latest Video</h3>
+    <p>"I am an Author ! What's your story?" - In this video, Shreyansh shares his journey as a young author and inspires others to tell their own stories.</p>
+    <a href="https://www.youtube.com/@linkshreyansh" target="_blank" class="watch-now-btn">
+      <i class="fab fa-youtube"></i> Watch Now
+    </a>
+  </div>
 </div>
 
 <!-- Bigger YouTube Button with Red Icon -->
