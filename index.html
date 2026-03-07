@@ -44,6 +44,7 @@ max-width:1200px;
 margin:auto;
 }
 
+/* About Section - NO SPACE BETWEEN PARAGRAPHS */
 #about p {
   font-size: 1.8em;
   line-height: 1.7;
@@ -62,6 +63,7 @@ margin:auto;
   display: inline-block;
 }
 
+/* Channel Section - LARGER TEXT */
 #channel p {
   font-size: 1.8em;
   line-height: 1.7;
@@ -76,6 +78,7 @@ margin:auto;
   display: inline-block;
 }
 
+/* Video Cards Container */
 .video-cards {
   display: flex;
   flex-wrap: wrap;
@@ -83,6 +86,7 @@ margin:auto;
   margin: 40px 0;
 }
 
+/* Individual Video Card */
 .video-card {
   flex: 1 1 300px;
   background: #f9f9f9;
@@ -181,6 +185,7 @@ justify-content: center;
 margin-top: 30px;
 }
 
+/* Books - MADE BIGGER */
 .book{
 background:white;
 padding:35px 25px;
@@ -275,6 +280,7 @@ background: #000000;
 color: white;
 }
 
+/* Coming Soon - MADE SAME SIZE AS BOOKS */
 .coming-soon {
 text-align: center;
 margin: 50px auto 0;
@@ -372,6 +378,7 @@ transform: scale(1.05);
 box-shadow: 0 0 20px rgba(255,215,0,0.5);
 }
 
+/* YouTube Button Styles - BIGGER with RED icon */
 .youtube-button {
 background: #333;
 color: white;
@@ -409,6 +416,7 @@ transition: all 0.3s ease;
 color: white;
 }
 
+/* Responsive design */
 @media (max-width: 768px) {
   .video-cards {
     flex-direction: column;
@@ -492,33 +500,54 @@ font-size: 1.4em;
 <div class="book">
 <img src="https://i.postimg.cc/vmS83csJ/Screenshot-2026-03-05-at-2-17-36-PM.png" alt="Camp Feralis book cover">
 <h3>Camp Feralis</h3>
-<p>An exciting adventure set in the wild where survival, teamwork, and courage are tested.</p>
+<p>
+An exciting adventure set in the wild where survival, teamwork, and courage are tested.
+</p>
 <div class="button-group">
-<button class="amazon-button" onclick="window.open('https://www.amazon.com/CAMP-FERALIS-SHREY-LAND-WILDS/dp/B0GG6Q9LT1/ref=zg_bsnr_g_3016_d_sccl_6/000-0000000-0000000?psc=1','_blank')">Buy It On Amazon 🛒</button>
-<button class="learn-more" onclick="window.open('camp-feralis.html','_blank')">Learn More</button>
+<button class="amazon-button" onclick="window.open('https://www.amazon.com/CAMP-FERALIS-SHREY-LAND-WILDS/dp/B0GG6Q9LT1/ref=zg_bsnr_g_3016_d_sccl_6/000-0000000-0000000?psc=1','_blank')">
+Buy It On Amazon 🛒
+</button>
+<button class="learn-more" onclick="window.open('camp-feralis.html','_blank')">
+Learn More
+</button>
 </div>
 </div>
 
 <div class="book">
 <img src="https://i.postimg.cc/y8mSQhQM/Screenshot-2026-03-05-at-2-18-11-PM.png" alt="What's Your Story book cover">
 <h3>What's Your Story?</h3>
-<p>A thoughtful and inspiring book designed to help readers reflect on their achievements and build confidence.</p>
+<p>
+A thoughtful and inspiring book designed to help readers reflect on their achievements and build confidence.
+</p>
 <div class="button-group">
-<button class="amazon-button" onclick="window.open('https://www.amazon.com/WHATS-YOUR-STORY-Achievements-Self-Esteem/dp/B0DSW9Z338','_blank')">Buy It On Amazon 🛒</button>
-<button class="learn-more" onclick="window.open('whats-your-story.html','_blank')">Learn More</button>
+<button class="amazon-button" onclick="window.open('https://www.amazon.com/WHATS-YOUR-STORY-Achievements-Self-Esteem/dp/B0DSW9Z338','_blank')">
+Buy It On Amazon 🛒
+</button>
+<button class="learn-more" onclick="window.open('whats-your-story.html','_blank')">
+Learn More
+</button>
 </div>
 </div>
 
 </div>
 
+<!-- More Coming Soon Section with THINK MONEY in middle and money bags at start and end of BOTH rows -->
 <div class="coming-soon">
 <h3>More Coming Soon...</h3>
 <div class="emoji-row">
-<span>💰</span><span>💵</span><span>🤑</span><span>💎</span><span>💰</span>
+<span>💰</span>
+<span>💵</span>
+<span>🤑</span>
+<span>💎</span>
+<span>💰</span>
 </div>
 <div class="think-money">THINK MONEY</div>
 <div class="emoji-row">
-<span>💰</span><span>💵</span><span>🤑</span><span>💎</span><span>💰</span>
+<span>💰</span>
+<span>💵</span>
+<span>🤑</span>
+<span>💎</span>
+<span>💰</span>
 </div>
 </div>
 
@@ -528,31 +557,50 @@ font-size: 1.4em;
 
 <h2>My YouTube Channel</h2>
 
-<p>Welcome to my YouTube corner! I create videos that bring together my love for storytelling, technology, and creativity. You'll find content ranging from book updates and writing tips to coding tutorials and fun creative challenges. Whether I'm sharing the inspiration behind my latest book or building something cool with code, my goal is to entertain, educate, and inspire young creators like you. Subscribe and join the adventure!</p>
+<p>
+Welcome to my YouTube corner! I create videos that bring together my love for storytelling, technology, and creativity. You'll find content ranging from book updates and writing tips to coding tutorials and fun creative challenges. Whether I'm sharing the inspiration behind my latest book or building something cool with code, my goal is to entertain, educate, and inspire young creators like you. Subscribe and join the adventure!
+</p>
 
+<!-- Two separate video cards side by side -->
 <div class="video-cards">
   
+  <!-- Card 1: Author Video -->
   <div class="video-card">
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/t27xUNh8aXU?rel=0&modestbranding=1" title="I am an Author ! What's your story?" allowfullscreen></iframe>
+      <iframe 
+      src="https://www.youtube.com/embed/t27xUNh8aXU?rel=0&modestbranding=1" 
+      title="I am an Author ! What's your story?"
+      allowfullscreen>
+      </iframe>
     </div>
     <h3 class="red-border">Watch My Author Story</h3>
     <p>"I am an Author ! What's your story?" - Shreyansh shares his journey as a young author and inspires others to tell their own stories.</p>
-    <a href="https://www.youtube.com/@linkshreyansh" target="_blank" class="watch-btn red-btn"><i class="fab fa-youtube"></i> Watch on Channel</a>
+    <a href="https://www.youtube.com/@linkshreyansh" target="_blank" class="watch-btn red-btn">
+      <i class="fab fa-youtube"></i> Watch on Channel
+    </a>
   </div>
   
+  <!-- Card 2: Python Video -->
   <div class="video-card">
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/_vv7yRWZHp8?rel=0&modestbranding=1" title="Day 9 of teaching python" allowfullscreen></iframe>
+      <iframe 
+      src="https://www.youtube.com/embed/_vv7yRWZHp8?rel=0&modestbranding=1" 
+      title="Day 9 of teaching python"
+      allowfullscreen>
+      </iframe>
     </div>
     <h3 class="blue-border">Learn Python With Me</h3>
     <p>Day 9 of teaching Python. Join the coding journey and learn programming step by step with Shreyansh.</p>
-    <a href="https://www.youtube.com/@linkshreyansh" target="_blank" class="watch-btn blue-btn"><i class="fab fa-python"></i> Watch Python Series</a>
+    <a href="https://www.youtube.com/@linkshreyansh" target="_blank" class="watch-btn blue-btn">
+      <i class="fab fa-python"></i> Watch Python Series
+    </a>
   </div>
 </div>
 
+<!-- Bigger YouTube Button with Red Icon -->
 <button class="youtube-button" onclick="window.open('https://www.youtube.com/@linkshreyansh','_blank')">
-<i class="fab fa-youtube youtube-icon"></i> Visit My Channel
+<i class="fab fa-youtube youtube-icon"></i>
+Visit My Channel
 </button>
 
 </section>
@@ -564,9 +612,14 @@ font-size: 1.4em;
 <p>Have a question? Want to collaborate?</p>
 <p>I'd love to hear from you!</p>
 
-<p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=linkshreyansh@gmail.com" target="_blank" class="email-link">📧 linkshreyansh@gmail.com</a></p>
+<p>
+<a href="https://mail.google.com/mail/?view=cm&fs=1&to=linkshreyansh@gmail.com" target="_blank" class="email-link">
+📧 linkshreyansh@gmail.com
+</a>
+</p>
 
 <p>Follow my journey as I create more books, videos, and exciting projects!</p>
+
 <p>Stay tuned for what's coming next... 🚀</p>
 
 </section>
