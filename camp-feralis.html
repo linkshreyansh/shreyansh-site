@@ -13,67 +13,60 @@ box-sizing: border-box;
 
 body {
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
 min-height: 100vh;
 color: #333;
-line-height: 1.6;
 }
 
 header {
-background: rgba(0, 0, 0, 0.8);
+background: rgba(0, 0, 0, 0.9);
 color: white;
 text-align: center;
-padding: 40px 20px;
+padding: 60px 20px;
 margin-bottom: 40px;
 box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
 header h1 {
-font-size: 4em;
+font-size: 4.5em;
 margin-bottom: 10px;
 text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-letter-spacing: 2px;
 background: linear-gradient(45deg, #ffd700, #ff6b6b);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-background-clip: text;
 }
 
 header p {
-font-size: 1.5em;
+font-size: 1.8em;
 color: #ffd700;
-font-style: italic;
 }
 
 .book-detail {
 max-width: 1200px;
 margin: 0 auto 60px;
-padding: 0 30px;
+padding: 0 20px;
 }
 
 .book-container {
 display: flex;
 gap: 50px;
 background: white;
-border-radius: 20px;
-padding: 40px;
-box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-backdrop-filter: blur(10px);
-border: 1px solid rgba(255,255,255,0.2);
+border-radius: 30px;
+padding: 50px;
+box-shadow: 0 30px 60px rgba(0,0,0,0.3);
 }
 
 .book-image {
 flex: 1;
-min-width: 300px;
 }
 
 .book-image img {
 width: 100%;
 height: auto;
-border-radius: 15px;
-box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+border-radius: 20px;
+box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+border: 4px solid #ffd700;
 transition: transform 0.3s ease;
-border: 3px solid #ffd700;
 }
 
 .book-image img:hover {
@@ -81,90 +74,78 @@ transform: scale(1.02);
 }
 
 .book-content {
-flex: 2;
+flex: 1.5;
 }
 
 .book-content h2 {
-font-size: 2.5em;
+font-size: 2.8em;
 margin-bottom: 30px;
-color: #333;
-border-bottom: 3px solid #ffd700;
-padding-bottom: 10px;
+color: #1e3c72;
+border-bottom: 4px solid #ffd700;
+padding-bottom: 15px;
 display: inline-block;
 }
 
 .book-description {
-background: #f9f9f9;
-padding: 30px;
-border-radius: 15px;
+background: #f8f9fa;
+padding: 35px;
+border-radius: 20px;
 margin-bottom: 30px;
-box-shadow: inset 0 2px 5px rgba(0,0,0,0.05);
 }
 
 .book-description p {
 margin-bottom: 20px;
-font-size: 1.1em;
-color: #555;
+font-size: 1.15em;
+line-height: 1.8;
+color: #2c3e50;
 }
 
 .book-description p:first-child {
 font-size: 1.3em;
 font-weight: bold;
-color: #764ba2;
-}
-
-.book-description p:last-child {
-margin-bottom: 0;
-}
-
-.book-description p::first-letter {
-font-size: 1.5em;
-font-weight: bold;
-color: #ff6b6b;
+color: #2a5298;
 }
 
 .book-meta {
 display: flex;
 gap: 20px;
 margin: 30px 0;
-flex-wrap: wrap;
 }
 
 .meta-item {
-background: linear-gradient(135deg, #667eea, #764ba2);
+background: linear-gradient(135deg, #1e3c72, #2a5298);
 color: white;
-padding: 15px 25px;
-border-radius: 10px;
+padding: 20px;
+border-radius: 15px;
 flex: 1;
-min-width: 150px;
 text-align: center;
-box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+box-shadow: 0 10px 20px rgba(30, 60, 114, 0.3);
 }
 
 .meta-item h3 {
 font-size: 1.1em;
-margin-bottom: 5px;
+margin-bottom: 8px;
 opacity: 0.9;
 }
 
 .meta-item p {
-font-size: 1.3em;
+font-size: 1.4em;
 font-weight: bold;
 color: #ffd700;
 }
 
 .feature-box {
-background: linear-gradient(135deg, #f0f4ff, #e6d5ff);
-padding: 25px;
-border-radius: 15px;
+background: linear-gradient(135deg, #fff5e6, #f0f4ff);
+padding: 30px;
+border-radius: 20px;
 margin: 30px 0;
-border-left: 5px solid #ff6b6b;
+border-left: 6px solid #ff6b6b;
 }
 
 .feature-box h3 {
-font-size: 1.3em;
-margin-bottom: 15px;
-color: #764ba2;
+font-size: 1.8em;
+margin-bottom: 20px;
+color: #1e3c72;
 display: flex;
 align-items: center;
 gap: 10px;
@@ -179,120 +160,94 @@ list-style: none;
 
 .feature-list li {
 background: white;
-padding: 10px 20px;
-border-radius: 30px;
-font-size: 1em;
-color: #555;
-box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+padding: 12px 25px;
+border-radius: 40px;
+font-size: 1.1em;
+color: #2c3e50;
+box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 display: flex;
 align-items: center;
-gap: 8px;
+gap: 10px;
+border: 1px solid #ffd700;
 }
 
-.feature-list li i {
-font-size: 1.2em;
+.quote-box {
+background: linear-gradient(135deg, #f9f3e6, #ffe6e6);
+padding: 30px;
+border-radius: 20px;
+margin: 30px 0;
+border-left: 6px solid #ffd700;
+}
+
+.quote-box p {
+font-size: 1.3em;
+font-style: italic;
+color: #2c3e50;
+}
+
+.quote-box .author {
+margin-top: 15px;
+color: #2a5298;
+font-weight: bold;
+font-style: normal;
+font-size: 1.1em;
 }
 
 .button-group {
 display: flex;
 gap: 20px;
 margin-top: 30px;
-flex-wrap: wrap;
 }
 
 .button {
-display: inline-block;
-padding: 15px 30px;
-border-radius: 50px;
+padding: 18px 35px;
+border-radius: 60px;
 text-decoration: none;
 font-weight: bold;
 transition: all 0.3s ease;
-font-size: 1.1em;
-box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+font-size: 1.2em;
+box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+text-align: center;
 }
 
 .button.amazon {
 background: #FF9900;
 color: white;
 flex: 2;
-min-width: 200px;
-text-align: center;
 }
 
 .button.amazon:hover {
 background: #0066FF;
-transform: translateY(-3px);
-box-shadow: 0 10px 25px rgba(0,102,255,0.4);
+transform: translateY(-5px);
+box-shadow: 0 15px 30px rgba(0,102,255,0.4);
 }
 
 .button.back {
 background: #333;
 color: white;
 flex: 1;
-min-width: 150px;
-text-align: center;
 }
 
 .button.back:hover {
 background: #000000;
-transform: translateY(-3px);
-box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
-
-.button i {
-margin-right: 8px;
-}
-
-.quote-box {
-background: linear-gradient(135deg, #fff3e0, #ffe0e0);
-padding: 25px;
-border-radius: 15px;
-margin: 30px 0;
-border-left: 5px solid #ffd700;
-font-style: italic;
-}
-
-.quote-box p {
-font-size: 1.2em;
-color: #555;
-}
-
-.quote-box .author {
-margin-top: 10px;
-color: #764ba2;
-font-weight: bold;
-font-style: normal;
+transform: translateY(-5px);
+box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 }
 
 @media (max-width: 768px) {
 header h1 {
-font-size: 2.5em;
+font-size: 2.8em;
 }
-
 .book-container {
 flex-direction: column;
-padding: 20px;
+padding: 30px;
 }
-
-.book-image {
-min-width: 100%;
-}
-
-.book-content h2 {
-font-size: 2em;
-}
-
-.book-description {
-padding: 20px;
-}
-
-.meta-item {
-min-width: 120px;
+.book-meta {
+flex-direction: column;
 }
 }
 </style>
 </head>
-
 <body>
 
 <header>
@@ -303,7 +258,7 @@ min-width: 120px;
 <section class="book-detail">
 <div class="book-container">
 <div class="book-image">
-<img src="https://i.postimg.cc/vmS83csJ/Screenshot-2026-03-05-at-2-17-36-PM.png" alt="Camp Feralis book cover">
+<img src="https://i.postimg.cc/vmS83csJ/Screenshot-2026-03-05-at-2-17-36-PM.png" alt="Camp Feralis">
 </div>
 
 <div class="book-content">
@@ -311,53 +266,37 @@ min-width: 120px;
 
 <div class="book-description">
 <p>Welcome to Camp Feralis—where summer fun turns into a fight for survival.</p>
-
 <p>When Shrey arrives at what's supposed to be the camp of his dreams, he quickly realizes something is terribly wrong. Kids are screaming. Animals are attacking without warning. And the adults who promised to protect them seem to have a dark secret.</p>
-
-<p>As danger closes in from every direction, Shrey and his friends must race against time to uncover the truth behind Camp Feralis. Strange occurrences escalate into life-threatening situations, and trust becomes a luxury they can't afford. Every shadow hides a potential threat. Every answer leads to darker questions.</p>
-
-<p>But the real terror isn't just surviving the camp—it's discovering what the counselors have been hiding all along. Will Shrey and his friends solve the mystery before it's too late, or will they become the next victims of Camp Feralis? One thing is certain—at Camp Feralis, the nightmare has only just begun. Perfect for fans of thrilling adventures and spine-tingling mysteries, this page-turner will keep young readers on the edge of their seats until the very last page.</p>
+<p>As danger closes in from every direction, Shrey and his friends must race against time to uncover the truth behind Camp Feralis. Every shadow hides a potential threat. Every answer leads to darker questions.</p>
+<p>Perfect for fans of thrilling adventures and spine-tingling mysteries, this page-turner will keep young readers on the edge of their seats until the very last page.</p>
 </div>
 
 <div class="book-meta">
-<div class="meta-item">
-<h3>Genre</h3>
-<p>Thriller/Adventure</p>
-</div>
-<div class="meta-item">
-<h3>Age Range</h3>
-<p>8-12 years</p>
-</div>
-<div class="meta-item">
-<h3>Pages</h3>
-<p>50+</p>
-</div>
+<div class="meta-item"><h3>Genre</h3><p>Thriller</p></div>
+<div class="meta-item"><h3>Ages</h3><p>8-12</p></div>
+<div class="meta-item"><h3>Pages</h3><p>50+</p></div>
 </div>
 
 <div class="feature-box">
 <h3>✨ What's Inside</h3>
 <ul class="feature-list">
-<li><i>🏕️</i> Survival Challenges</li>
-<li><i>🔍</i> Mystery Elements</li>
-<li><i>👥</i> Teamwork Themes</li>
-<li><i>🌲</i> Wilderness Adventure</li>
-<li><i>🤫</i> Dark Secrets</li>
-<li><i>⚡</i> Page-Turning Action</li>
+<li>🏕️ Wilderness Survival</li>
+<li>🔍 Mystery Solving</li>
+<li>👥 Teamwork</li>
+<li>🌲 Adventure</li>
+<li>🤫 Dark Secrets</li>
+<li>⚡ Action</li>
 </ul>
 </div>
 
 <div class="quote-box">
 <p>"At Camp Feralis, the nightmare has only just begun..."</p>
-<p class="author">— From the book</p>
+<div class="author">— From the book</div>
 </div>
 
 <div class="button-group">
-<a class="button amazon" href="https://www.amazon.com/CAMP-FERALIS-SHREY-LAND-WILDS/dp/B0GG6Q9LT1/ref=zg_bsnr_g_3016_d_sccl_6/000-0000000-0000000?psc=1" target="_blank">
-<i>📚</i> Buy on Amazon
-</a>
-<a class="button back" href="index.html">
-<i>←</i> Back to Home
-</a>
+<a class="button amazon" href="https://www.amazon.com/CAMP-FERALIS-SHREY-LAND-WILDS/dp/B0GG6Q9LT1" target="_blank">📚 Buy on Amazon</a>
+<a class="button back" href="index.html">← Back to Home</a>
 </div>
 </div>
 </div>
