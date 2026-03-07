@@ -69,6 +69,25 @@ text-align:center;
 padding:20px;
 margin-top:40px;
 }
+
+.video-container {
+position: relative;
+padding-bottom: 56.25%; /* 16:9 aspect ratio */
+padding-top: 25px;
+height: 0;
+margin: 20px 0;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.video-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border-radius: 10px;
+}
 </style>
 
 </head>
@@ -142,6 +161,18 @@ Learn More
 <p>
 Welcome to my YouTube corner! I create videos that bring together my love for storytelling, technology, and creativity. You'll find content ranging from book updates and writing tips to coding tutorials and fun creative challenges. Whether I'm sharing the inspiration behind my latest book or building something cool with code, my goal is to entertain, educate, and inspire young creators like you. Subscribe and join the adventure!
 </p>
+
+<!-- Featured Video -->
+<h3>Featured Video:</h3>
+<div class="video-container">
+<iframe 
+src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+allowfullscreen>
+</iframe>
+</div>
 
 <button onclick="window.open('https://www.youtube.com/@linkshreyansh','_blank')">
 Visit My Channel
