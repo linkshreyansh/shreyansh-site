@@ -13,32 +13,31 @@ box-sizing: border-box;
 
 body {
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+background: #0B3B5C;
 min-height: 100vh;
 color: #333;
 }
 
 header {
-background: rgba(0, 0, 0, 0.9);
+background: #0A2472;
 color: white;
 text-align: center;
 padding: 60px 20px;
 margin-bottom: 40px;
 box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+border-bottom: 4px solid #FDB750;
 }
 
 header h1 {
 font-size: 4.5em;
 margin-bottom: 10px;
 text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-background: linear-gradient(45deg, #FFE66D, #FF8C42);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+color: white;
 }
 
 header p {
 font-size: 1.8em;
-color: #FFE66D;
+color: #FDB750;
 }
 
 .book-detail {
@@ -65,7 +64,7 @@ width: 100%;
 height: auto;
 border-radius: 20px;
 box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-border: 4px solid #FFE66D;
+border: 4px solid #FDB750;
 transition: transform 0.3s ease;
 }
 
@@ -80,14 +79,14 @@ flex: 1.5;
 .book-content h2 {
 font-size: 2.8em;
 margin-bottom: 30px;
-color: #1e3c72;
-border-bottom: 4px solid #FFE66D;
+color: #0A2472;
+border-bottom: 4px solid #FDB750;
 padding-bottom: 15px;
 display: inline-block;
 }
 
 .book-description {
-background: #f0f4f8;
+background: #E6F0FA;
 padding: 35px;
 border-radius: 20px;
 margin-bottom: 30px;
@@ -97,13 +96,13 @@ margin-bottom: 30px;
 margin-bottom: 20px;
 font-size: 1.15em;
 line-height: 1.8;
-color: #2c3e50;
+color: #1A2E40;
 }
 
 .book-description p:first-child {
 font-size: 1.3em;
 font-weight: bold;
-color: #1e3c72;
+color: #0A2472;
 }
 
 .book-meta {
@@ -113,39 +112,40 @@ margin: 30px 0;
 }
 
 .meta-item {
-background: linear-gradient(135deg, #1e3c72, #2a5298);
+background: #0A2472;
 color: white;
 padding: 20px;
 border-radius: 15px;
 flex: 1;
 text-align: center;
-box-shadow: 0 10px 20px rgba(30, 60, 114, 0.3);
+box-shadow: 0 10px 20px rgba(10, 36, 114, 0.3);
 }
 
 .meta-item h3 {
 font-size: 1.1em;
 margin-bottom: 8px;
 opacity: 0.9;
+color: #E6F0FA;
 }
 
 .meta-item p {
 font-size: 1.4em;
 font-weight: bold;
-color: #FFE66D;
+color: #FDB750;
 }
 
 .feature-box {
-background: linear-gradient(135deg, #e6f0ff, #b8d4ff);
+background: #D4E6F5;
 padding: 30px;
 border-radius: 20px;
 margin: 30px 0;
-border-left: 6px solid #FF8C42;
+border-left: 6px solid #FDB750;
 }
 
 .feature-box h3 {
 font-size: 1.8em;
 margin-bottom: 20px;
-color: #1e3c72;
+color: #0A2472;
 display: flex;
 align-items: center;
 gap: 10px;
@@ -163,22 +163,24 @@ background: white;
 padding: 12px 25px;
 border-radius: 40px;
 font-size: 1.1em;
-color: #2c3e50;
+color: #0A2472;
 box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 display: flex;
 align-items: center;
 gap: 10px;
-border: 1px solid #FFE66D;
+border: 1px solid #FDB750;
+font-weight: 500;
 }
 
 .inspiration-quote {
-background: linear-gradient(135deg, #1e3c72, #2a5298);
+background: #0A2472;
 color: white;
 padding: 30px;
 border-radius: 20px;
 margin: 30px 0;
 text-align: center;
-box-shadow: 0 10px 20px rgba(30, 60, 114, 0.3);
+box-shadow: 0 10px 20px rgba(10, 36, 114, 0.3);
+border-right: 4px solid #FDB750;
 }
 
 .inspiration-quote p {
@@ -190,7 +192,7 @@ color: white;
 .inspiration-quote .author {
 margin-top: 15px;
 font-weight: bold;
-color: #FFE66D;
+color: #FDB750;
 font-size: 1.1em;
 }
 
@@ -230,9 +232,9 @@ flex: 1;
 }
 
 .button.back:hover {
-background: #000000;
+background: #0A2472;
 transform: translateY(-5px);
-box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+box-shadow: 0 15px 30px rgba(10, 36, 114, 0.3);
 }
 
 @media (max-width: 768px) {
@@ -281,7 +283,7 @@ flex-direction: column;
 <h3>✨ What's Inside</h3>
 <ul class="feature-list">
 <li>📝 Journal Pages</li>
-<li>🎨 Activities</li>
+<li>🎨 Creative Activities</li>
 <li>🌟 Achievement Tracker</li>
 <li>💭 Memory Prompts</li>
 <li>😊 Gratitude Exercises</li>
