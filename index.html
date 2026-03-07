@@ -44,6 +44,41 @@ max-width:1200px;
 margin:auto;
 }
 
+/* About Section - LARGER TEXT */
+#about p {
+  font-size: 1.8em;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+#about h2 {
+  font-size: 3.2em;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #ffd700;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+/* Channel Section - LARGER TEXT */
+#channel p {
+  font-size: 1.8em;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+#channel h2 {
+  font-size: 3.2em;
+  margin-bottom: 40px;
+  border-bottom: 3px solid #ff0000;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+#channel h3 {
+  font-size: 2.4em;
+  margin: 30px 0 20px;
+}
+
 #books {
 max-width: 1200px;
 }
@@ -56,12 +91,13 @@ justify-content: center;
 margin-top: 30px;
 }
 
+/* Books - MADE BIGGER */
 .book{
 background:white;
-padding:30px 20px;
+padding:35px 25px;
 border-radius:10px;
 flex: 1 1 300px;
-max-width: 350px;
+max-width: 380px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -77,7 +113,7 @@ box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 
 .book img {
 width: 100%;
-max-width: 250px;
+max-width: 280px;
 height: auto;
 border-radius: 8px;
 margin: 0 auto 20px auto;
@@ -88,7 +124,7 @@ box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 .book h3 {
 margin: 10px 0;
 color: #333;
-font-size: 1.5em;
+font-size: 1.8em;
 }
 
 .book p {
@@ -96,6 +132,7 @@ text-align: center;
 margin: 15px 0;
 line-height: 1.6;
 color: #555;
+font-size: 1.1em;
 }
 
 .book .button-group {
@@ -149,24 +186,26 @@ background: #000000;
 color: white;
 }
 
+/* Coming Soon - MADE SAME SIZE AS BOOKS */
 .coming-soon {
 text-align: center;
-margin-top: 50px;
-padding: 30px;
+margin: 50px auto 0;
+padding: 35px 25px;
 background: linear-gradient(135deg, #f9f9f9, #fff);
 border-radius: 15px;
 box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 border: 2px dashed #ffd700;
+max-width: 380px;
 }
 
 .coming-soon h3 {
-font-size: 2.5em;
+font-size: 2.2em;
 color: #333;
 margin-bottom: 20px;
 }
 
 .coming-soon .think-money {
-font-size: 3em;
+font-size: 2.8em;
 font-weight: bold;
 color: #ffd700;
 margin: 20px 0;
@@ -175,7 +214,7 @@ text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
 .coming-soon .emoji-row {
-font-size: 2.5em;
+font-size: 2.2em;
 margin: 15px 0;
 display: flex;
 justify-content: center;
@@ -315,6 +354,9 @@ max-width: 100%;
 .book button {
 max-width: 180px;
 }
+.coming-soon {
+max-width: 100%;
+}
 .coming-soon h3 {
 font-size: 2em;
 }
@@ -338,6 +380,12 @@ padding: 10px 20px;
 padding: 15px 40px;
 font-size: 1.4em;
 min-width: 250px;
+}
+#about p {
+font-size: 1.4em;
+}
+#channel p {
+font-size: 1.4em;
 }
 }
 </style>
