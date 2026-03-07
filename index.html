@@ -78,99 +78,9 @@ margin:auto;
   display: inline-block;
 }
 
-/* Video Cards Container */
-.video-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin: 40px 0;
-}
-
-/* Individual Video Card */
-.video-card {
-  flex: 1 1 300px;
-  background: #f9f9f9;
-  border-radius: 15px;
-  padding: 25px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.video-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.video-container {
-  position: relative;
-  padding-bottom: 56.25%;
-  height: 0;
-  overflow: hidden;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-
-.video-container iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 10px;
-}
-
-.video-card h3 {
-  font-size: 1.8em;
-  margin: 10px 0 10px;
-  color: #333;
-  padding-left: 15px;
-}
-
-.video-card .red-border {
-  border-left: 5px solid #ff0000;
-}
-
-.video-card .blue-border {
-  border-left: 5px solid #306998;
-}
-
-.video-card p {
-  font-size: 1.2em !important;
-  color: #555 !important;
-  margin-bottom: 20px !important;
-  line-height: 1.5 !important;
-}
-
-.video-card .watch-btn {
-  display: inline-block;
-  color: white;
-  padding: 10px 25px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: all 0.3s ease;
-}
-
-.video-card .watch-btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.video-card .red-btn {
-  background: #ff0000;
-}
-
-.video-card .red-btn:hover {
-  background: #cc0000;
-}
-
-.video-card .blue-btn {
-  background: #306998;
-}
-
-.video-card .blue-btn:hover {
-  background: #1d4e7a;
+#channel h3 {
+  font-size: 2.4em;
+  margin: 30px 0 20px;
 }
 
 #books {
@@ -333,6 +243,27 @@ padding:20px;
 margin-top:40px;
 }
 
+.video-container {
+position: relative;
+padding-bottom: 56.25%;
+height: 0;
+overflow: hidden;
+max-width: 100%;
+margin: 20px 0;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.video-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+border: none;
+border-radius: 10px;
+}
+
 #contact {
 background: #222;
 color: white;
@@ -418,10 +349,6 @@ color: white;
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .video-cards {
-    flex-direction: column;
-  }
-  
 .books-container {
 gap: 20px;
 }
@@ -561,40 +488,14 @@ Learn More
 Welcome to my YouTube corner! I create videos that bring together my love for storytelling, technology, and creativity. You'll find content ranging from book updates and writing tips to coding tutorials and fun creative challenges. Whether I'm sharing the inspiration behind my latest book or building something cool with code, my goal is to entertain, educate, and inspire young creators like you. Subscribe and join the adventure!
 </p>
 
-<!-- Two separate video cards side by side -->
-<div class="video-cards">
-  
-  <!-- Card 1: Author Video -->
-  <div class="video-card">
-    <div class="video-container">
-      <iframe 
-      src="https://www.youtube.com/embed/t27xUNh8aXU?rel=0&modestbranding=1" 
-      title="I am an Author ! What's your story?"
-      allowfullscreen>
-      </iframe>
-    </div>
-    <h3 class="red-border">Watch My Author Story</h3>
-    <p>"I am an Author ! What's your story?" - Shreyansh shares his journey as a young author and inspires others to tell their own stories.</p>
-    <a href="https://www.youtube.com/@linkshreyansh" target="_blank" class="watch-btn red-btn">
-      <i class="fab fa-youtube"></i> Watch on Channel
-    </a>
-  </div>
-  
-  <!-- Card 2: Python Video -->
-  <div class="video-card">
-    <div class="video-container">
-      <iframe 
-      src="https://www.youtube.com/embed/_vv7yRWZHp8?rel=0&modestbranding=1" 
-      title="Day 9 of teaching python"
-      allowfullscreen>
-      </iframe>
-    </div>
-    <h3 class="blue-border">Learn Python With Me</h3>
-    <p>Day 9 of teaching Python. Join the coding journey and learn programming step by step with Shreyansh.</p>
-    <a href="https://www.youtube.com/@linkshreyansh" target="_blank" class="watch-btn blue-btn">
-      <i class="fab fa-python"></i> Watch Python Series
-    </a>
-  </div>
+<!-- Featured Video - I am an Author! -->
+<h3>Watch My Video: "I am an Author ! What's your story?"</h3>
+<div class="video-container">
+<iframe 
+src="https://www.youtube.com/embed/t27xUNh8aXU?rel=0&modestbranding=1" 
+title="I am an Author ! What's your story?"
+allowfullscreen>
+</iframe>
 </div>
 
 <!-- Bigger YouTube Button with Red Icon -->
