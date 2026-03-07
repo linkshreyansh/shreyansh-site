@@ -38,24 +38,71 @@ font-size:18px;
 
 section{
 padding:40px;
-max-width:900px;
+max-width:1200px;
 margin:auto;
+}
+
+#books {
+max-width: 1200px;
+}
+
+.books-container {
+display: flex;
+flex-wrap: wrap;
+gap: 30px;
+justify-content: center;
+margin-top: 30px;
 }
 
 .book{
 background:white;
-padding:20px;
-margin-top:20px;
+padding:30px 20px;
 border-radius:10px;
+flex: 1 1 300px;
+max-width: 350px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+transition: transform 0.3s ease;
+}
+
+.book:hover {
+transform: translateY(-5px);
+box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.book img {
+width: 100%;
+max-width: 250px;
+height: auto;
+border-radius: 8px;
+margin: 0 auto 20px auto;
+display: block;
+box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.book h3 {
+margin: 10px 0;
+color: #333;
+}
+
+.book p {
+text-align: center;
+margin: 15px 0;
 }
 
 button{
 background:#333;
 color:white;
 border:none;
-padding:10px 20px;
+padding:10px 30px;
 border-radius:5px;
 cursor:pointer;
+margin-top: 10px;
+font-size: 1em;
+transition: background 0.3s ease;
 }
 
 button:hover{
@@ -103,6 +150,16 @@ text-decoration: underline;
 color: white;
 cursor: pointer;
 }
+
+/* Responsive design */
+@media (max-width: 768px) {
+.books-container {
+gap: 20px;
+}
+.book {
+max-width: 100%;
+}
+}
 </style>
 
 </head>
@@ -139,34 +196,33 @@ Along with writing books, he enjoys coding, creating content, and working on new
 </section>
 
 <section id="books">
-<h2>Books</h2>
+<h2>My Books</h2>
+
+<div class="books-container">
 
 <div class="book">
-<img src="https://i.postimg.cc/vmS83csJ/Screenshot-2026-03-05-at-2-17-36-PM.png" alt="Camp Feralis book cover" style="width:100%; max-width:250px; border-radius:8px; margin-bottom:20px; display:block;">
+<img src="https://i.postimg.cc/vmS83csJ/Screenshot-2026-03-05-at-2-17-36-PM.png" alt="Camp Feralis book cover">
 <h3>Camp Feralis</h3>
 <p>
 An exciting adventure set in the wild where survival, teamwork, and courage are tested.
 </p>
-
 <button onclick="window.open('camp-feralis.html','_blank')">
 Learn More
 </button>
-
 </div>
 
 <div class="book">
-<img src="https://i.postimg.cc/y8mSQhQM/Screenshot-2026-03-05-at-2-18-11-PM.png" alt="What's Your Story book cover" style="width:100%; max-width:250px; border-radius:8px; margin-bottom:20px; display:block;">
+<img src="https://i.postimg.cc/y8mSQhQM/Screenshot-2026-03-05-at-2-18-11-PM.png" alt="What's Your Story book cover">
 <h3>What's Your Story?</h3>
 <p>
 A thoughtful and inspiring book designed to help readers reflect on their achievements and build confidence.
 </p>
-
 <button onclick="window.open('whats-your-story.html','_blank')">
 Learn More
 </button>
-
 </div>
 
+</div>
 </section>
 
 <section id="channel">
