@@ -96,6 +96,15 @@ line-height: 1.6;
 color: #555;
 }
 
+.book .button-group {
+display: flex;
+flex-direction: column;
+gap: 10px;
+width: 100%;
+align-items: center;
+margin-top: 15px;
+}
+
 .book button {
 background:#333;
 color:white;
@@ -103,15 +112,29 @@ border:none;
 padding:12px 30px;
 border-radius:5px;
 cursor:pointer;
-margin-top: 15px;
 font-size: 1em;
-transition: background 0.3s ease;
+transition: all 0.3s ease;
 width: auto;
-min-width: 150px;
+min-width: 180px;
 }
 
 .book button:hover{
 background:#555;
+transform: scale(1.05);
+}
+
+.book .amazon-button {
+background: #FF9900;
+color: white;
+font-weight: bold;
+}
+
+.book .amazon-button:hover {
+background: #FF7700;
+}
+
+.book .learn-more {
+background: #333;
 }
 
 .coming-soon {
@@ -209,7 +232,7 @@ border-radius:5px;
 cursor:pointer;
 font-size: 1.2em;
 font-weight: bold;
-transition: background 0.3s ease;
+transition: all 0.3s ease;
 width: auto;
 min-width: 200px;
 margin: 20px 0;
@@ -283,9 +306,14 @@ Along with writing books, he enjoys coding, creating content, and working on new
 <p>
 An exciting adventure set in the wild where survival, teamwork, and courage are tested.
 </p>
-<button onclick="window.open('camp-feralis.html','_blank')">
+<div class="button-group">
+<button class="amazon-button" onclick="window.open('https://www.amazon.com/CAMP-FERALIS-SHREY-LAND-WILDS/dp/B0GG6Q9LT1/ref=zg_bsnr_g_3016_d_sccl_6/000-0000000-0000000?psc=1','_blank')">
+Buy It On Amazon 🛒
+</button>
+<button class="learn-more" onclick="window.open('camp-feralis.html','_blank')">
 Learn More
 </button>
+</div>
 </div>
 
 <div class="book">
@@ -294,9 +322,14 @@ Learn More
 <p>
 A thoughtful and inspiring book designed to help readers reflect on their achievements and build confidence.
 </p>
-<button onclick="window.open('whats-your-story.html','_blank')">
+<div class="button-group">
+<button class="amazon-button" onclick="window.open('https://www.amazon.com/WHATS-YOUR-STORY-Achievements-Self-Esteem/dp/B0DSW9Z338','_blank')">
+Buy It On Amazon 🛒
+</button>
+<button class="learn-more" onclick="window.open('whats-your-story.html','_blank')">
 Learn More
 </button>
+</div>
 </div>
 
 </div>
