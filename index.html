@@ -78,31 +78,36 @@ margin:auto;
   display: inline-block;
 }
 
-#channel h3 {
-  font-size: 2.4em;
-  margin: 30px 0 20px;
+/* Video Cards Container */
+.video-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin: 40px 0;
 }
 
-/* Video Section - NEW STYLING */
-.video-section {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  margin: 40px 0;
+/* Individual Video Card */
+.video-card {
+  flex: 1 1 300px;
   background: #f9f9f9;
-  padding: 30px;
   border-radius: 15px;
+  padding: 25px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
 
 .video-container {
   position: relative;
-  padding-bottom: 28.125%; /* 16:9 aspect ratio but half the height */
+  padding-bottom: 56.25%;
   height: 0;
   overflow: hidden;
-  width: 50%;
   border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  margin-bottom: 15px;
 }
 
 .video-container iframe {
@@ -115,48 +120,57 @@ margin:auto;
   border-radius: 10px;
 }
 
-.video-text {
-  width: 50%;
-  text-align: left;
-}
-
-.video-text h3 {
-  font-size: 2.8em !important;
-  margin: 0 0 15px 0 !important;
+.video-card h3 {
+  font-size: 1.8em;
+  margin: 10px 0 10px;
   color: #333;
+  padding-left: 15px;
+}
+
+.video-card .red-border {
   border-left: 5px solid #ff0000;
-  padding-left: 20px;
 }
 
-.video-text p {
-  font-size: 1.4em !important;
-  color: #555;
-  margin: 0 0 20px 0 !important;
-  line-height: 1.6;
+.video-card .blue-border {
+  border-left: 5px solid #306998;
 }
 
-.watch-now-btn {
+.video-card p {
+  font-size: 1.2em !important;
+  color: #555 !important;
+  margin-bottom: 20px !important;
+  line-height: 1.5 !important;
+}
+
+.video-card .watch-btn {
   display: inline-block;
-  background: #ff0000;
   color: white;
-  padding: 12px 30px;
+  padding: 10px 25px;
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.2em;
   transition: all 0.3s ease;
-  border: none;
-  cursor: pointer;
 }
 
-.watch-now-btn:hover {
-  background: #cc0000;
+.video-card .watch-btn:hover {
   transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(255,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
-.watch-now-btn i {
-  margin-right: 8px;
+.video-card .red-btn {
+  background: #ff0000;
+}
+
+.video-card .red-btn:hover {
+  background: #cc0000;
+}
+
+.video-card .blue-btn {
+  background: #306998;
+}
+
+.video-card .blue-btn:hover {
+  background: #1d4e7a;
 }
 
 #books {
@@ -404,26 +418,8 @@ color: white;
 
 /* Responsive design */
 @media (max-width: 768px) {
-  .video-section {
+  .video-cards {
     flex-direction: column;
-    gap: 20px;
-  }
-  
-  .video-container {
-    width: 100%;
-    padding-bottom: 56.25%; /* Back to full size on mobile */
-  }
-  
-  .video-text {
-    width: 100%;
-    text-align: center;
-  }
-  
-  .video-text h3 {
-    border-left: none;
-    border-bottom: 3px solid #ff0000;
-    padding-left: 0;
-    padding-bottom: 10px;
   }
   
 .books-container {
@@ -565,20 +561,38 @@ Learn More
 Welcome to my YouTube corner! I create videos that bring together my love for storytelling, technology, and creativity. You'll find content ranging from book updates and writing tips to coding tutorials and fun creative challenges. Whether I'm sharing the inspiration behind my latest book or building something cool with code, my goal is to entertain, educate, and inspire young creators like you. Subscribe and join the adventure!
 </p>
 
-<!-- Featured Video Section with smaller video and text on right -->
-<div class="video-section">
-  <div class="video-container">
-    <iframe 
-    src="https://www.youtube.com/embed/t27xUNh8aXU?rel=0&modestbranding=1" 
-    title="I am an Author ! What's your story?"
-    allowfullscreen>
-    </iframe>
+<!-- Two separate video cards side by side -->
+<div class="video-cards">
+  
+  <!-- Card 1: Author Video -->
+  <div class="video-card">
+    <div class="video-container">
+      <iframe 
+      src="https://www.youtube.com/embed/t27xUNh8aXU?rel=0&modestbranding=1" 
+      title="I am an Author ! What's your story?"
+      allowfullscreen>
+      </iframe>
+    </div>
+    <h3 class="red-border">Watch My Author Story</h3>
+    <p>"I am an Author ! What's your story?" - Shreyansh shares his journey as a young author and inspires others to tell their own stories.</p>
+    <a href="https://www.youtube.com/@linkshreyansh" target="_blank" class="watch-btn red-btn">
+      <i class="fab fa-youtube"></i> Watch on Channel
+    </a>
   </div>
-  <div class="video-text">
-    <h3>Watch My Latest Video</h3>
-    <p>"I am an Author ! What's your story?" - In this video, Shreyansh shares his journey as a young author and inspires others to tell their own stories.</p>
-    <a href="https://www.youtube.com/@linkshreyansh" target="_blank" class="watch-now-btn">
-      <i class="fab fa-youtube"></i> Watch Now
+  
+  <!-- Card 2: Python Video -->
+  <div class="video-card">
+    <div class="video-container">
+      <iframe 
+      src="https://www.youtube.com/embed/_vv7yRWZHp8?rel=0&modestbranding=1" 
+      title="Day 9 of teaching python"
+      allowfullscreen>
+      </iframe>
+    </div>
+    <h3 class="blue-border">Learn Python With Me</h3>
+    <p>Day 9 of teaching Python. Join the coding journey and learn programming step by step with Shreyansh.</p>
+    <a href="https://www.youtube.com/@linkshreyansh" target="_blank" class="watch-btn blue-btn">
+      <i class="fab fa-python"></i> Watch Python Series
     </a>
   </div>
 </div>
