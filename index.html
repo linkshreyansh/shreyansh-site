@@ -537,20 +537,27 @@ Learn More
 Welcome to my YouTube corner! I create videos that bring together my love for storytelling, technology, and creativity. You'll find content ranging from book updates and writing tips to coding tutorials and fun creative challenges. Whether I'm sharing the inspiration behind my latest book or building something cool with code, my goal is to entertain, educate, and inspire young creators like you. Subscribe and join the adventure!
 </p>
 
-<div style="position: relative; display: inline-block;">
-  <a href="https://www.youtube.com/watch?v=t27xUNh8aXU" target="_blank">
-    <img src="https://img.youtube.com/vi/t27xUNh8aXU/maxresdefault.jpg" alt="Video" style="width: 100%; max-width: 640px;">
-    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(255,0,0,0.8); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
-      <span style="color: white; font-size: 30px;">▶</span>
+<div style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
+  <!-- Video Thumbnail - Left Side -->
+  <div style="flex: 1; min-width: 300px;">
+    <div style="position: relative; display: inline-block; width: 100%;">
+      <a href="https://www.youtube.com/watch?v=t27xUNh8aXU" target="_blank">
+        <img src="https://img.youtube.com/vi/t27xUNh8aXU/maxresdefault.jpg" alt="Video" style="width: 100%; max-width: 640px; border-radius: 10px;">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(255,0,0,0.8); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+          <span style="color: white; font-size: 30px;">▶</span>
+        </div>
+      </a>
     </div>
-  </a>
-</div>
+  </div>
 
-<!-- Bigger YouTube Button with Red Icon -->
-<button class="youtube-button" onclick="window.open('https://www.youtube.com/@linkshreyansh','_blank')">
-<i class="fab fa-youtube youtube-icon"></i>
-Visit My Channel
-</button>
+  <!-- Button - Right Side (Centered) -->
+  <div style="flex: 1; display: flex; justify-content: center; min-width: 250px;">
+    <button class="youtube-button" onclick="window.open('https://www.youtube.com/@linkshreyansh','_blank')" style="margin: 0;">
+      <i class="fab fa-youtube youtube-icon"></i>
+      Visit My Channel
+    </button>
+  </div>
+</div>
 
 </section>
 
