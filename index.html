@@ -252,6 +252,7 @@ max-width: 100%;
 margin: 20px 0;
 border-radius: 10px;
 box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+background: #000;
 }
 
 .video-container iframe {
@@ -264,8 +265,8 @@ border: none;
 border-radius: 10px;
 }
 
-/* Error message styling */
-.video-error {
+/* Placeholder styling */
+.video-placeholder {
 position: absolute;
 top: 0;
 left: 0;
@@ -281,27 +282,29 @@ text-align: center;
 padding: 20px;
 box-sizing: border-box;
 border-radius: 10px;
+cursor: pointer;
+transition: all 0.3s ease;
 }
 
-.video-error p {
-margin: 10px 0;
+.video-placeholder:hover {
+background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+transform: scale(1.02);
+}
+
+.video-placeholder i {
+font-size: 4em;
+margin-bottom: 20px;
+color: #ff0000;
+}
+
+.video-placeholder p {
 font-size: 1.2em;
+margin: 10px 0;
 }
 
-.video-error .channel-link {
-background: #ff0000;
-color: white;
-padding: 12px 24px;
-text-decoration: none;
-border-radius: 25px;
-margin-top: 15px;
-display: inline-block;
-transition: transform 0.3s ease;
-}
-
-.video-error .channel-link:hover {
-transform: scale(1.05);
-background: #cc0000;
+.video-placeholder .small-text {
+font-size: 0.9em;
+opacity: 0.9;
 }
 
 #contact {
@@ -431,6 +434,12 @@ font-size: 1.4em;
 #channel p {
 font-size: 1.4em;
 }
+.video-placeholder i {
+font-size: 2.5em;
+}
+.video-placeholder p {
+font-size: 1em;
+}
 }
 </style>
 
@@ -531,13 +540,13 @@ Welcome to my YouTube corner! I create videos that bring together my love for st
 <!-- Featured Video - I am an Author! -->
 <h3>Watch My Video: "I am an Author ! What's your story?"</h3>
 <div class="video-container" id="videoContainer">
-<!-- Using a working YouTube video about being an author -->
-<iframe 
-src="https://www.youtube.com/embed/XjJQBjWYDTs?rel=0&modestbranding=1&autoplay=0" 
-title="I am an Author ! What's your story?"
-allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-allowfullscreen>
-</iframe>
+    <!-- Clickable placeholder that opens YouTube channel -->
+    <div class="video-placeholder" onclick="window.open('https://www.youtube.com/@linkshreyansh','_blank')">
+        <i class="fab fa-youtube"></i>
+        <p><strong>Watch on YouTube</strong></p>
+        <p>"I am an Author! What's your story?"</p>
+        <p class="small-text">Click to watch on my channel →</p>
+    </div>
 </div>
 
 <!-- Bigger YouTube Button with Red Icon -->
@@ -572,23 +581,27 @@ Visit My Channel
 </footer>
 
 <script>
-// Add error handling for the iframe
-document.addEventListener('DOMContentLoaded', function() {
-    const iframe = document.querySelector('.video-container iframe');
-    
-    // Function to check if video is playable (with timeout)
-    const checkVideo = setTimeout(function() {
-        // If video doesn't load properly after 5 seconds, show friendly message
-        console.log('Video loading check - if you see this message, the video might be unavailable');
-    }, 5000);
-    
-    // Alternative: If you want to add a backup link, uncomment this section
-    // You can replace the video ID with your actual working video ID when available
-    // For now, I've used a working placeholder video about writing/author content
-    
-    // To use your own video, simply replace the video ID in the src URL above
-    // Example: src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
-});
+// Alternative approach: If you want to embed a specific video, 
+// replace YOUR_VIDEO_ID with your actual YouTube video ID
+// Example: dQw4w9WgXcQ is a placeholder - replace with your real ID
+
+// To add your video, uncomment the code below and replace 'YOUR_VIDEO_ID'
+/*
+const videoContainer = document.getElementById('videoContainer');
+if (videoContainer) {
+    videoContainer.innerHTML = `
+        <iframe 
+            src="https://www.youtube.com/embed/YOUR_VIDEO_ID?rel=0&modestbranding=1&autoplay=0" 
+            title="I am an Author ! What's your story?"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    `;
+}
+*/
+
+// If you have the correct video ID, uncomment the line below and replace VIDEO_ID_HERE
+// const YOUR_VIDEO_ID = "VIDEO_ID_HERE"; // Put your actual YouTube video ID here
 </script>
 
 </body>
