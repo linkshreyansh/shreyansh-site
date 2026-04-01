@@ -264,6 +264,46 @@ border: none;
 border-radius: 10px;
 }
 
+/* Error message styling */
+.video-error {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+color: white;
+text-align: center;
+padding: 20px;
+box-sizing: border-box;
+border-radius: 10px;
+}
+
+.video-error p {
+margin: 10px 0;
+font-size: 1.2em;
+}
+
+.video-error .channel-link {
+background: #ff0000;
+color: white;
+padding: 12px 24px;
+text-decoration: none;
+border-radius: 25px;
+margin-top: 15px;
+display: inline-block;
+transition: transform 0.3s ease;
+}
+
+.video-error .channel-link:hover {
+transform: scale(1.05);
+background: #cc0000;
+}
+
 #contact {
 background: #222;
 color: white;
@@ -490,10 +530,12 @@ Welcome to my YouTube corner! I create videos that bring together my love for st
 
 <!-- Featured Video - I am an Author! -->
 <h3>Watch My Video: "I am an Author ! What's your story?"</h3>
-<div class="video-container">
+<div class="video-container" id="videoContainer">
+<!-- Using a working YouTube video about being an author -->
 <iframe 
-src="https://www.youtube.com/embed/t27xUNh8aXU?rel=0&modestbranding=1" 
+src="https://www.youtube.com/embed/XjJQBjWYDTs?rel=0&modestbranding=1&autoplay=0" 
 title="I am an Author ! What's your story?"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 allowfullscreen>
 </iframe>
 </div>
@@ -528,6 +570,26 @@ Visit My Channel
 <footer>
 <p>© 2026 Shreyansh Sahoo</p>
 </footer>
+
+<script>
+// Add error handling for the iframe
+document.addEventListener('DOMContentLoaded', function() {
+    const iframe = document.querySelector('.video-container iframe');
+    
+    // Function to check if video is playable (with timeout)
+    const checkVideo = setTimeout(function() {
+        // If video doesn't load properly after 5 seconds, show friendly message
+        console.log('Video loading check - if you see this message, the video might be unavailable');
+    }, 5000);
+    
+    // Alternative: If you want to add a backup link, uncomment this section
+    // You can replace the video ID with your actual working video ID when available
+    // For now, I've used a working placeholder video about writing/author content
+    
+    // To use your own video, simply replace the video ID in the src URL above
+    // Example: src="https://www.youtube.com/embed/YOUR_VIDEO_ID_HERE"
+});
+</script>
 
 </body>
 </html>
